@@ -15,7 +15,7 @@ interface DevConfiguration extends webpack.Configuration {
 const config: DevConfiguration = {
   mode: 'development',
   output: {
-    publicPath: '/',
+    publicPath: '/'
   },
   entry: './src/index.tsx',
   module: {

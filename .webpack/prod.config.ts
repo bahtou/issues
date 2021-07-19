@@ -12,7 +12,7 @@ const config: webpack.Configuration = {
   output: {
     path: path.resolve(__dirname, '..', '_webpack-output'),
     filename: '[name].[contenthash].js',
-    publicPath: '',
+    publicPath: ''
   },
   module: {
     rules: [
@@ -25,19 +25,19 @@ const config: webpack.Configuration = {
             presets: [
               '@babel/preset-env',
               '@babel/preset-react',
-              '@babel/preset-typescript',
-            ],
-          },
-        },
-      },
-    ],
+              '@babel/preset-typescript'
+            ]
+          }
+        }
+      }
+    ]
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.js']
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: 'src/index.html'
     }),
     new ForkTsCheckerWebpackPlugin({
       async: false,
@@ -51,9 +51,9 @@ const config: webpack.Configuration = {
       }
     }),
     new ESLintPlugin({
-      extensions: ['js', 'jsx', 'ts', 'tsx'],
+      extensions: ['js', 'jsx', 'ts', 'tsx']
     }),
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin()
   ],
   optimization: {
     minimize: false
