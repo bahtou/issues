@@ -1,1 +1,5 @@
-issues are put on a branch to share
+`npm install`
+
+`npm start`
+
+Should be able to see that there are two rebuilds
