@@ -1,0 +1,16 @@
+{
+  "name": "busboy-question",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.mjs",
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "busboy": "^1.4.0"
+  },
+  "scripts": {
+    "start": "node ./server.mjs"
+  }
+}
